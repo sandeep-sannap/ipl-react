@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  text-align: center;
+  margin: 1rem 4rem;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.title h1 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.team {
+  margin: 2rem 5rem;
+}
+
+.won-card {
+  background-color: #4da375;
+}
+
+.lost-card {
+  background-color: #a34d5d;
+}
+
+.MatchDetailCard {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.match-date,
+.match-venue,
+.match-result {
+  margin-top: 10px;
+}
+/* .additional-detail {
+  text-align: right;
+} */
+additional-detail p {
+  margin-bottom: 20px;
+}
+
+.MatchSmallCard {
+  padding: 10px;
+  margin-bottom: 20px;
+
+  margin-right: 21px;
+}
+
+.match-result {
+  margin-top: 10px;
+}
+
+.small-card {
+  display: flex;
+}
+
+.more-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 30px;
+}
+
+@media screen and (max-width: 450px) {
+  .home {
+    grid-template-columns: 1fr;
+    margin: 5rem 1rem;
+  }
+  .team {
+    margin: 0.5rem 1rem;
+  }
+  .MatchDetailCard {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* .year-selector {
+    display: flex;
+    justify-content: space-between;
+  } */
+  .small-card {
+    display: flex;
+    flex-direction: column;
+  }
+}
